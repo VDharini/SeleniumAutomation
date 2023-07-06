@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- Single class -->
+<!-- <suite name="My TestNG " >
+  <test  name="My TestNG test" verbose="2">
+    <classes>
+      <class name="srinivasTestng.BeforeAndAfterAnnotation"/>
+    </classes>
+  </test> 
+  </suite> -->
+  
+  <!-- Multiple Tests/  class -->
+<!-- <suite name="Multiple Suite" >
+  <test  name="Multiple test" verbose="2">
+    <classes>
+      <class name="srinivasTestng.BeforeAndAfterAnnotation"/>
+      <class name="srinivasTestng.DependentMethods"/>
+    </classes>
+  </test> 
+   <test  name="My TestNG test2" verbose="2">
+    <classes>
+      <class name="srinivasTestng.TestAnnotationWithSel"/>
+    </classes>
+  </test> 
+ </suite>  -->
+            
+ <!-- Run a package -->
+<!-- <suite name="Package Suite " >
+  <test  name="Package test" verbose="2">
+    <packages>
+      <package  name="srinivasTestng"/>
+    </packages>
+  </test> 
+  </suite> -->
+  
+  <!-- Include / Exclude Methods -->
+<!--  <suite name="Include / Exclude Methods Suite" >
+    <test  name="Include / Exclude Methods test" verbose="2">
+    <classes>
+      <class name="srinivasTestng.TestAnnotationWithSel">
+		  <methods>
+			  <include name="launchBrowser"/>
+			  <exclude name="searchDress"/>
+			  <include name="closeBrowser"/>
+		  </methods>
+	  </class>	  
+    </classes>
+  </test> 
+ </suite> -->
+  
+  <!-- Include / Exclude Groups -->
+  <!-- <suite name="Group Suite " >
+  <test  name="Group test" verbose="2">
+    <groups>
+		<run>
+      		<include name="sanity"/>
+      		 <exclude name="regression"/> 
+      </run>
+    </groups>
+    <classes>
+      <class name="srinivasTestng.GroupingTests" />
+	 </classes>
+  </test> 
+  </suite> -->
+  
+  <!-- Parameterization using xml      -->
+ <!--  <suite name="Param suite " >
+	  <parameter name="btype" value="chrome" />
+	  <parameter name="url" value="https://magento.softwaretestingboard.com/" />
+	  <parameter name="searchStr" value="T-Shirts" />
+  <test  name="Param test" verbose="2">
+    <classes>
+      <class name="srinivasTestng.XMLParameterization"/>
+    </classes>
+  </test> 
+  </suite> -->
+  
+   <!-- DataProvider Parameterization using xml     
+ <suite name="DP suite " >
+  <test  name="DP test" verbose="2">
+    <classes>
+      <class name="srinivasTestng.DataProviderParameter"/>
+    </classes>
+  </test> 
+  </suite>   -->
+  
+ <!-- Parallel Execution "Tests"    Thread-count opens that many number of browsers -->
+ <!-- maximum thread-count is usually five lower is better -->
+ <suite name="Parallel suite " verbose="2"  parallel="tests" thread-count="3"> 
+  <test  name="Parallel test 1" verbose="2">
+    <classes>
+      <class name="srinivasTestng.DataProviderParameter"/>
+    </classes>
+  </test> 
+   <test  name="Parallel test 2" verbose="2">
+    <classes>
+      <class name="srinivasTestng.TestAnnotationWithSel"/>
+    </classes>
+  </test> 
+   <test  name="Parallel test 3" verbose="2">
+    <classes>
+      <class name="srinivasTestng.AssertsSrini"/>
+    </classes>
+  </test> 
+  </suite> 
+  
+   <!-- Parallel Execution "Classes"    -->
+
+ <!-- <suite name="Parallel suite " verbose="2"  parallel="tests" thread-count="2"> 
+  <test  name="Parallel test " verbose="2">
+    <classes>
+      <class name="srinivasTestng.DataProviderParameter"/>
+       <class name="srinivasTestng.TestAnnotationWithSel"/>
+       <class name="srinivasTestng.AssertsSrini"/>
+    </classes>
+  </test> 
+ </suite> -->
+  
+  
+  
+  
+  
+  
+  
+  
